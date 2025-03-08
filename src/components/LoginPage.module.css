@@ -1,0 +1,134 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  padding: 1rem;
+}
+
+.loginCard {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.loginCard:hover {
+  transform: translateY(-5px);
+}
+
+.logoContainer {
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  display: inline-block;
+}
+
+.logoAccent {
+  color: #0066cc;
+  margin-left: 4px;
+}
+
+.loginCard h1 {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  color: #666;
+  font-size: 1rem;
+}
+
+.errorMessage {
+  display: flex;
+  align-items: center;
+  background-color: #fff2f2;
+  border-left: 4px solid #dc3545;
+  color: #dc3545;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.errorMessage svg {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 102, 204, 0.2);
+}
+
+.loginButton svg {
+  margin-right: 8px;
+}
+
+.loginButton:hover {
+  background-color: #0055aa;
+  box-shadow: 0 6px 8px rgba(0, 102, 204, 0.3);
+}
+
+.loginButton:active {
+  transform: translateY(1px);
+}
+
+.footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  color: #333;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 102, 204, 0.1);
+  border-radius: 50%;
+  border-top-color: #0066cc;
+  margin-bottom: 1rem;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} 
